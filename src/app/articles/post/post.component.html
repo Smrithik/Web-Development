@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <h1>{{ content.title }}</h1>
+
+  {{ content.text }}
+</div>
+
+<div *ngFor="let article of reco">
+  <mat-card class="reco">
+    <a routerLink="/articles/{{ article.title }}">
+      {{ article.title }}
+    </a>
+    <!-- <button (click)="navigateTo(article.title)">GO TO</button> -->
+    <a href="article.link">link</a>
+  </mat-card>
+</div>

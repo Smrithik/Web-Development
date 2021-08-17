@@ -1,0 +1,13 @@
+<div *ngFor="let article of articles">
+  <mat-card>
+    <span>
+      <h2>
+        <a routerLink="/articles/{{ article.title }}">
+          {{ article.title }}
+        </a>
+      </h2>
+    </span>
+    <br />
+    <a href="article.link">link</a>
+  </mat-card>
+</div>

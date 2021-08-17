@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <span routerLink="/">ForUwithU</span>
+  <!-- <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button> -->
+  <!-- <a class="nav-item nav-link" routerLink="/">Home</a> -->
+  <span class="example-spacer"></span>
+  <a class="nav-item nav-link" routerLink="articles">Articles</a>
+  <button mat-raised-button (click)="logout()">LOGOUT</button>
+</mat-toolbar>
+
+<!-- main app container -->
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
